@@ -1,10 +1,8 @@
 import React, { useState, useContext } from "react";
 import Info from "./Info";
 import axios from "axios";
-import { LocationContext } from "../contexts/LocationProvider";
 
 export default function Header(props) {
-  const url = useContext(LocationContext);
   const [input, setInput] = useState("");
   const getLocation = async (e) => {
     e.preventDefault();

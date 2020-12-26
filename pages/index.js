@@ -1,8 +1,6 @@
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-import axios from "axios";
 import { useState } from "react";
-import { LocationContext } from "../contexts/LocationProvider";
 
 export default function Home({ data }) {
   const [locationData, setLocationData] = useState({ ...data });
