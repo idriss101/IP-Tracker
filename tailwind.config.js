@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         "hero-pattern": "url('/pattern-bg.png')",
       }),
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
+      },
     },
   },
   variants: {
