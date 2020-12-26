@@ -12,6 +12,7 @@ export default function Header(props) {
       `https://geo.ipify.org/api/v1?apiKey=at_kbPdCKzyvjussFGcZZJFz4vZj2FHI&ipAddress=${input}`
     );
     setInput("");
+    props.setLocationData({ ...res.data });
     console.log(res);
   };
 
@@ -35,7 +36,7 @@ export default function Header(props) {
           />
           <button
             type="submit"
-            className="w-12 bg-black rounded-tr-xl rounded-br-xl"
+            className="w-12 bg-black rounded-tr-xl rounded-br-xl focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

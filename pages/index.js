@@ -1,13 +1,14 @@
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import axios from "axios";
-import { useContext } from "react";
+import { useState } from "react";
 import { LocationContext } from "../contexts/LocationProvider";
 
 export default function Home({ data }) {
+  const [locationData, setLocationData] = useState({ ...data });
   return (
     <Layout title="IP-Tracker">
-      <Header {...data} />
+      <Header {...locationData} setLocationData={setLocationData} />
     </Layout>
   );
 }
