@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/Head";
+import { MapContainer, useMap } from "react-leaflet";
 
 export default function Layout({ children, title }) {
   return (
@@ -19,6 +20,7 @@ export default function Layout({ children, title }) {
           crossOrigin=""
         ></script>
       </Head>
+
       <main className="min-h-screen container max-w-full">{children}</main>
     </div>
   );

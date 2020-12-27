@@ -2,14 +2,15 @@ import Header from "../components/Header";
 import Layout from "../components/Layout";
 import { useState } from "react";
 import Map from "../components/Map";
-import MapDisplay from "../components/MapDisplay";
+import MapWrap from "../components/MapWrap";
 
 export default function Home({ data }) {
   const [locationData, setLocationData] = useState({ ...data });
+
   return (
     <Layout title="IP-Tracker">
       <Header {...locationData} setLocationData={setLocationData} />
-      <Map />
+      <MapWrap {...locationData} />
     </Layout>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import Info from "./Info";
 import axios from "axios";
+import { MapContainer, useMap } from "react-leaflet";
 
 export default function Header(props) {
   const [input, setInput] = useState("");
@@ -9,9 +10,10 @@ export default function Header(props) {
     const res = await axios.get(
       `https://geo.ipify.org/api/v1?apiKey=at_kbPdCKzyvjussFGcZZJFz4vZj2FHI&ipAddress=${input}`
     );
+    const { data } = res;
     setInput("");
-    props.setLocationData({ ...res.data });
-    console.log(res);
+    props.setLocationData({ ...data });
+    console.log(data);
   };
 
   return (
