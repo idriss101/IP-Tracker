@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import { useState } from "react";
-import Map from "../components/Map";
 import MapWrap from "../components/MapWrap";
 
 export default function Home({ data }) {

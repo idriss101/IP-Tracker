@@ -6,7 +6,7 @@ const MapContext = createContext();
 export default function MapProvider({ children }) {
   return (
     <div>
-      <MapContext.Provider>{children}</MapContext.Provider>
+      <MapContext.Provider value="">{children}</MapContext.Provider>
     </div>
   );
 }

@@ -17,7 +17,7 @@ export default function Header(props) {
   };
 
   return (
-    <div className="bg-hero-pattern bg-center p-3 text-white text-center mx-auto flex flex-col justify-center align-center   pb-30">
+    <div className="bg-hero-pattern bg-center p-3 text-white text-center mx-auto flex flex-col justify-center align-center pb-40 relative overflow-visible z-0 w-full">
       <div className="pb-7">
         <h1 className="text-3xl capitalize font-lightbold mb-6 mt-3 ">
           IP address tracker
@@ -53,9 +53,7 @@ export default function Header(props) {
           </button>
         </form>
       </div>
-      <div className="">
-        <Info {...props} />
-      </div>
+      <Info {...props} />
     </div>
   );
 }
