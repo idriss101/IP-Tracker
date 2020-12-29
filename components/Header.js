@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import Info from "./Info";
 import axios from "axios";
-import { MapContainer, useMap } from "react-leaflet";
 
 export default function Header(props) {
   const [input, setInput] = useState("");

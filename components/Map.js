@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-  useMap,
-  useMapEvent,
-  setCenter,
-} from "react-leaflet";
+import { TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 
 export default function Map(props) {
   const position = [props.location.lat, props.location.lng];
@@ -20,7 +11,6 @@ export default function Map(props) {
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        // style={{ zIndex: "-2" }}
       />
       {/* <Marker position={position}>
         <Popup>
