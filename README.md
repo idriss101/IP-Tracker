@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IP Tracker
+A web app that allows you to find a location on a map based on a given IP address
 
-## Getting Started
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Status](#status)
 
-First, run the development server:
+## General info
+This web app was my first attempt at using NextJs and TailwindCSS. It taight me how to use TailwindCSS and NextJs together as well as using a third party library LeafletJs in order to display an interactive map. 
 
-```bash
-npm run dev
-# or
-yarn dev
+## Screenshots
+[![Screenshot-2021-01-19-180337.png](https://i.postimg.cc/3wXxD3Wv/Screenshot-2021-01-19-180337.png)](https://postimg.cc/f3bNGncz)
+
+## Technologies
+* NextJs
+* TailwindCSS
+* LeafletJs
+
+## Setup
+```
+$ cd ../ip-tracker
+$ npm install
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Status
+Project is: Finished
