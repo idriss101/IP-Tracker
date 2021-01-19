@@ -1,5 +1,5 @@
 import React from "react";
-import { TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 export default function Map(props) {

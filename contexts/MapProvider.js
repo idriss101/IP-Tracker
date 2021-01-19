@@ -1,5 +1,4 @@
-import React, { useContext, createContext, useState } from "react";
-import { MapContainer, useMap } from "react-leaflet";
+import React, { createContext } from "react";
 
 const MapContext = createContext();
 
