@@ -3,8 +3,8 @@ import React from "react";
 export default function Info(props) {
   return (
     <div
-      className="bg-white w-5/6 rounded-xl py-1 px-2 mx-auto text-black absolute top-40 left-8 right-8 shadow-xl lg:w-4/6 lg:p-7 lg:top-50 "
-      style={{ zIndex: "800" }}
+      className="bg-white w-5/6 rounded-xl py-1 px-2 mx-auto text-black left-8 right-8 shadow-xl lg:w-4/6 lg:p-7 lg:top-50 "
+      // style={{ zIndex: "800" }}
     >
       <ul className="lg:flex lg:flex-row lg:items-center lg:justify-around">
         <li className="mb-4 pt-4 lg:pt-0 lg:border-r-2 lg:border-gray-200 lg:pr-10  ">

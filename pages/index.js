@@ -15,11 +15,13 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://geo.ipify.org/api/v1?apiKey=at_kbPdCKzyvjussFGcZZJFz4vZj2FHI&ipAddress=209.226.104.217"
+  const res = await fetch("https://api.ipify.org/?format=json");
+  const data1 = await res.json();
+  const res2 = await fetch(
+    `https://geo.ipify.org/api/v1?apiKey=at_kbPdCKzyvjussFGcZZJFz4vZj2FHI&ipAddress=${data1.ip}`
   );
-  const data = await res.json();
+  const data = await res2.json();
   return {
-    props: { data },
+    props: { data, data1 },
   };
 }
